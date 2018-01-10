@@ -1,0 +1,2590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuisine School</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body style="background-color: #000;">
+<!--导航栏-->
+<div class="top">
+    <div class="top-logo">
+        <a><img src="img/logo2.jpg" height="140px" width=100% alt="Logo" title="Logo"></a>
+    </div>
+    <div class="top-nav">
+        <ul>
+            <li class="home" style="width: 22%; background: #333;"><a href="index.html"><em>Home</em></a></li>
+            <li class="recipe" style="width: 22%;"><a href="recipes.html"><em>Recipes</em></a>
+                <div class="menu">
+                    <a href="#">
+                        <img src="img/nav/recipes1.png"><br/>
+                        <p>Appetizer</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/nav/recipes2.png"><br/>
+                        <span>Breakfast &amp; Brunch</span>
+                    </a>
+                    <a href="#">
+                        <img src="img/nav/recipes3.png"><br/>
+                        <span>Chicken</span>
+                    </a>
+                    <a href="#">
+                        <img src="img/nav/recipes4.png"> <br/>
+                        <span>Dessert</span>
+                    </a>
+                    <br/>
+                    <a href="#">
+                        <img src="img/nav/recipes5.png"> <br/>
+                        <span>Healthy</span>
+                    </a>
+                    <a href="#">
+                        <img src="img/nav/recipes6.png"> <br/>
+                        <span>Holidays and Events</span>
+                    </a>
+                    <a href="#">
+                        <img src="img/nav/recipes7.png"> <br/>
+                        <span>Magazine Favorites</span>
+                    </a>
+                    <a href="#">
+                        <img src="img/nav/recipes8.png"> <br/>
+                        <span>Main Dish</span>
+                    </a>
+                    <br/>
+                    <a href="#">
+                        <img src="img/nav/recipes9.png"> <br/>
+                        <span>Quick &amp; Easy</span>
+                    </a>
+                    <a href="#">
+                        <img src="img/nav/recipes10.png"> <br/>
+                        <span>Slow Cooker</span>
+                    </a>
+                    <a href="#">
+                        <img src="img\nav\recipes11.png"> <br/>
+                        <span>Trusted Brands</span>
+                    </a>
+                    <a href="#">
+                        <img src="img/nav/recipes12.png"> <br/>
+                        <span>Vegetarian</span>
+                    </a>
+                </div>
+            </li>
+            <li class="shop" style="width: 28%;"><a href="shop.html"><em>Online Shop</em></a></li>
+            <li class="community" style="width: 28%;"><a href="community.html"><em>Community</em></a></li>
+        </ul>
+        <div class="search">
+            <form action="" method="get">
+                <input type="submit" value="">
+                <input type="text" name="search" value="" placeholder="Find a recipe...">
+            </form>
+        </div>
+    </div>
+    <div class="top-user">
+        <ul>
+            <li>
+                <img class="user" src="img/user.png" height="30">
+                <a class="a2" href="register.html">Register</a>
+                <a class="a1" href="login.html">Login</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--回到顶端-->
+<div>
+    <a style="display: none;" id="topbtn" title="回到顶部">
+        <img src="img/topbtn.png" style="width: 60px;height: 60px;"></a>
+</div>
+<!--//主页图片-->
+<div class="header">
+    <div class="imgs">
+
+        <ul>
+            <li style="background:url(img/bg1.jpg);background-size: cover;"></li>
+            <li style="background:url(img/bg2.jpg);background-size: 1450px 700px;"></li>
+            <li style="background:url(img/bg3.jpg);background-size: cover;"></li>
+            <li style="background:url(img/bg4.jpg);background-size: cover;"></li>
+            <li style="background:url(img/bg5.jpg);background-size: cover;"></li>
+        </ul>
+    </div>
+    <div class="imgs-text">
+        <h1 style="color: white;text-shadow: 0px 0 10px #fff;">Wellcome to CuisineSchool !</h1>
+    </div>
+    <div class="imgs-btn">
+        <ul>
+            <li class="select"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<!--菜单-->
+<div class="body-nav">
+    <!--竖条导航-->
+    <div class="body-nav-n">
+        <ul>
+            <li class="hover"><img src="img/nav/recipes1.png"><a href="#">Appetizer</a></li>
+            <li><img src="img/nav/recipes2.png"><a href="#">Breakfast &amp; Brunch</a></li>
+            <li><img src="img/nav/recipes3.png"><a href="#">Chicken</a></li>
+            <li><img src="img/nav/recipes4.png"><a href="#">Dessert</a></li>
+            <li><img src="img/nav/recipes5.png"><a href="#">Healthy</a></li>
+            <li><img src="img/nav/recipes6.png"><a href="#">Holidays and Events</a></li>
+            <li><img src="img/nav/recipes7.png"><a href="#">Magazine Favorites</a></li>
+            <li><img src="img/nav/recipes8.png"><a href="#">Main Dish</a></li>
+            <li><img src="img/nav/recipes9.png"><a href="#">Quick &amp; Easy</a></li>
+            <li><img src="img/nav/recipes10.png"><a href="#">Slow Cooker</a></li>
+            <li><img src="img/nav/recipes11.png"><a href="#">Trusted Brands</a></li>
+            <li><img src="img/nav/recipes12.png"><a href="#">Vegetarian</a></li>
+        </ul>
+    </div>
+    <!--详细信息-->
+    <div class="body-nav-d">
+        <!--**************1****************-->
+        <div class="context" style="display: block;">
+            <div class="contextd">
+                <img src="img/index/1.1.jpg">
+                <div>
+                    <h4>Easy Rumaki with Pineapple</h4>
+                    <p style="border-bottom: 1px dashed #ddd;">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Pineapple cubes and water chestnuts are wrapped in bacon,brushed with sesame-ginger dressing,and
+                        baked into a quick and easy rumaki appetizer.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/1.2.jpg">
+                <div>
+                    <h4>Prosciutto e Melone(Italian Ham and Melon)</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This easy and refreshing starter featuring cantaloupe and cured ham can also be served as an
+                        appetizer:just cut the cantaloupe into
+                        bite-size pieces,wrap them with ham and bite-size pieces,wrap them with ham and spear them on
+                        skewer for a colorful snack!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/1.3.jpg">
+                <div>
+                    <h4>Mouth-Watering Stuffed Mushrooms</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A restaurant-worthy appetizer stuffed with cream cheese,garlic,Parmesan cheese,and a hint of
+                        heat.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/1.4.jpg">
+                <div>
+                    <h4>Strawberry Goat Cheese Bruschetta</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Charred Italian bread is topped with creamy goat cheese and a mixture of strawberries and
+                        balsamic vinegar.This makes the perfect start or end to an Italian feast.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/1.5.jpg">
+                <div>
+                    <h4>Best Spinach Dip Ever</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p> A flavorful spinach dip with water chestnuts fills a tasty bread bowl. The perfect recipe for
+                        entertaining.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/1.6.jpg">
+                <div>
+                    <h4>Annie's Fruit Salsa and Cinnamon Chips </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This delicious salsa made with fresh kiwis, apples and berries is a sweet, succulent treat when
+                        served on homemade cinnamon tortilla chips. Enjoy it as a summer appetizer or an easy
+                        dessert.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/1.7.jpg">
+                <div>
+                    <h4>Buffalo Chicken Dip </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Five simple ingredients in your slow cooker make this creamy, cheesy, zesty hot dip that tastes
+                        just like Buffalo chicken wings.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/1.8.jpg">
+                <div>
+                    <h4>Double Tomato Bruschetta</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Bruschetta is a traditional Italian item in which small slices of bread are topped with such
+                        things as tomato, basil, and mozzarella cheese, as is the case in this delightful recipe.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/1.9.jpg">
+                <div>
+                    <h4>Artichoke & Spinach Dip Restaurant Style </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Alfredo sauce brings a rich, creamy twist to an old favorite. Serve this hot dip with bread
+                        sticks, chips or crackers.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/1.10.jpg">
+                <div>
+                    <h4>Brown Sugar Smokies </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Mini smoked sausages disappear extra quickly when blanketed in crisp bacon and topped with a
+                        brown-sugar glaze.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/1.11.jpg">
+                <div>
+                    <h4>Spicy Bean Salsa </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Also known as 'cowboy caviar', this twist on traditional salsa is enlivened with black beans,
+                        corn and black-eyed peas.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/1.12.jpg">
+                <div>
+                    <h4>Southwestern Egg Rolls</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>An assortment of traditional Southwestern-style ingredients are wrapped inside small flour
+                        tortillas and deep fried.</p>
+                </div>
+            </div>
+        </div>
+        <!--**************2****************-->
+        <div class="context">
+            <div class="contextd">
+                <img src="img/index/2.1.jpg">
+                <div>
+                    <h4>Baked Brunch Omelet </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A baked egg casserole with cheese, ham and green onions.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/2.2.jpg">
+                <div>
+                    <h4>Belgian Waffles </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>The yeast in these eggy waffles makes for exceptionally deep pockets, perfect for capturing
+                        melting butter and syrups.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/2.3.jpg">
+                <div>
+                    <h4>Tomatoes and Bacon Egg Muffins</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Tomato and bacon egg muffins are a great on-the-go breakfast that will keep you full until
+                        lunch.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/2.4.jpg">
+                <div>
+                    <h4>Authentic Mexican Breakfast Tacos </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Quick Easy and Delicious! I learned this recipe from many years of eating with the Mexican cooks
+                        at my restaurant. They like to sneak in breakfast before we open. I've grown to LOVE this
+                        breakfast. If you like spicy food, you will love this.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/2.5.jpg">
+                <div>
+                    <h4>Clone of a Cinnabon </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Save yourself a lot of money by making your own homemade cinnamon rolls! The dough is made in the
+                        bread machine and everything else is done by hand.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/2.6.jpg">
+                <div>
+                    <h4>Fluffy Pancakes </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Tall, fluffy pancakes make the best breakfast, especially when there's plenty of butter and
+                        syrup. Make it extra special with berries and whipped cream!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/2.7.jpg">
+                <div>
+                    <h4>Allrecipes Cooking School</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Want to cook perfect eggs? Start your free trial of Allrecipes Cooking School and learn essential
+                        cooking skills. Use code ONEMONTH at checkout.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/2.8.jpg">
+                <div>
+                    <h4>Good Old Fashioned Pancakes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Make delicious, fluffy pancakes from scratch. This recipe uses 7 ingredients you probably already
+                        have.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/2.9.jpg">
+                <div>
+                    <h4>Fluffy French Toast </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This French toast recipe is different because it uses flour. I have given it to some friends and
+                        they've all liked it better than the French toast they usually make!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/2.10.jpg">
+                <div>
+                    <h4>Classic Waffles</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A classic waffle recipe includes basic ingredients you probably already have on hand, creating a
+                        perfectly crisp breakfast item.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/2.11.jpg">
+                <div>
+                    <h4>Quick Quiche</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>When you don't have time to make a pastry crust, try this quick crustless version. You may add
+                        any other goodies you like, such as ham, chicken, crab, shrimp or broccoli.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/2.12.jpg">
+                <div>
+                    <h4>Strawberry Oatmeal Breakfast Smoothie</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This is a fast and filling vegan smoothie with a deep pink color and a rich, creamy texture.</p>
+                </div>
+            </div>
+        </div>
+        <!--**************3****************-->
+        <div class="context">
+            <div class="contextd">
+                <img src="img/index/3.1.jpg">
+                <div>
+                    <h4>Chicken Kabobs</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Place chicken and colorful veggies on skewers, grill, and enjoy! This is a quick way to enjoy a
+                        delicious barbequed meal.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/3.2.jpg">
+                <div>
+                    <h4>Soba Noodle Salad with Chicken and Sesame </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This colorful soba noodle salad features a tangy sweet dressing, chicken, and a rainbow of
+                        vegetables for a clean yet hearty lunch or dinner.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/3.3.jpg">
+                <div>
+                    <h4>Italian Chicken Marinade</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Italian dressing marinade is the prelude to a tasty grilled chicken.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/3.4.jpg">
+                <div>
+                    <h4>Rusty Chicken Thighs </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A marinade for grilled chicken thighs is a little sweet, a little tangy, and a little hot thanks
+                        to maple syrup, rice vinegar, and plenty of seasonings. You can use chicken breasts, too.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/3.5.jpg">
+                <div>
+                    <h4>Slow Cooker BBQ Chicken </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Mix up an easy barbecue-style sauce sweetened with maple syrup to cook with chicken breasts in a
+                        slow cooker. Dinner is ready 30 minutes after you get home.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/3.6.jpg">
+                <div>
+                    <h4>Korean Fried Chicken </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Chef John's Korean fried chicken is tender and juicy while maintaining a plate-scratching
+                        crispiness that will make this recipe your new favorite.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/3.7.jpg">
+                <div>
+                    <h4>Summer Squash Chicken Alfredo
+                    </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Chicken, zucchini, and yellow squash are served over pasta with an Alfredo sauce, and sprinkled
+                        with bacon, sun-dried tomatoes, and almonds.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/3.8.jpg">
+                <div>
+                    <h4>Allrecipes Cooking School</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Start your free trial and learn four ways to cook chicken—grilled, roasted, sautéed, and braised.
+                        Get all the courses free: use code ONEMONTH at checkout.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/3.9.jpg">
+                <div>
+                    <h4>Southern Fried Chicken </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A heritage recipe, both simple and reliable: chicken in a batter of salt, pepper, flour and
+                        paprika, quickly fried in hot vegetable oil.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/3.10.jpg">
+                <div>
+                    <h4>Chicken Breasts Pierre</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Chicken steeped in a sweet and savory blend of tomatoes, spices and herbs. Serve with crusty
+                        French bread to mop up every last drop.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/3.11.jpg">
+                <div>
+                    <h4>Slow Cooker Chicken Taco Soup </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A hearty combination of beans, corn, tomatoes, and taco seasonings, slow cooked with shredded
+                        chicken. Top each bowl with Cheddar cheese, sour cream, and crushed tortilla chips. Made mostly
+                        of canned ingredients, this tasty soup lets the slow cooker do the work so you don't have
+                        to!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/3.12.jpg">
+                <div>
+                    <h4>Chicken Pot Pie IX </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A delicious chicken pot pie made from scratch with carrots, peas, and celery for a comfort food
+                        classic.</p>
+                </div>
+            </div>
+        </div>
+        <!--**************4****************-->
+        <div class="context">
+            <div class="contextd">
+                <img src="img/index/4.1.jpg">
+                <div>
+                    <h4>Canada Day Nanaimo Bar Cheesecake</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>It's good to make this Canadian-inspired cheesecake the day before, so it has time to fully chill
+                        and set up.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/4.2.jpg">
+                <div>
+                    <h4>Fresh Cherry Cobbler</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This is a delicious cherry cobbler made with fresh cherries instead of canned. It may take a
+                        little longer to make because you need to pit the cherries, but it is well worth it when you
+                        taste the finished product.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/4.3.jpg">
+                <div>
+                    <h4>Frozen Margarita Pie</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>All the fixings for margaritas are mixed into a refreshing frozen cream pie in a salty pretzel
+                        crust.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/4.4.jpg">
+                <div>
+                    <h4>Peach Pie with Sour Cream</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Homemade pie crust is ready in minutes when a food processor does all the work. Fresh peaches and
+                        sour cream make a sweet and creamy filling.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/4.5.jpg">
+                <div>
+                    <h4>Double Chocolate Frozen Fudge Pops</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>These easy to make frozen treats are creamy, cold, chocolatey, and very fun to eat.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/4.6.jpg">
+                <div>
+                    <h4>Summery Lime-Mango Shortcakes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Mango, blueberry, and strawberry topped shortcakes, filled with coconut cream, are sunny treats
+                        that are perfect any time of the year.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/4.7.jpg">
+                <div>
+                    <h4>Mascarpone Brulee with Fresh Berries</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Shortcake halves are topped with mascarpone brulee and fresh berries, for what Chef John calls
+                        "the perfect finish to that early summer dinner."
+                    </p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/4.8.jpg">
+                <div>
+                    <h4>Fresh Blueberry Cake</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Fresh blueberries are baked into this moist and lemony cake for the perfect summer dessert.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/4.9.jpg">
+                <div>
+                    <h4>Juicy Watermelon Sorbet</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A refreshing frozen treat made with pureed watermelon.
+                    </p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/4.10.jpg">
+                <div>
+                    <h4>Best Big, Fat, Chewy Chocolate Chip Cookie </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Make bakery-style chocolate chip cookies with these tips.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/4.11.jpg">
+                <div>
+                    <h4>Too Much Chocolate Cake </h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Start with a box of chocolate cake mix and add a few ingredients like sour cream and chocolate
+                        chips to make a moist, intensely-flavored chocolate cake that will win you First Prize from your
+                        friends and family.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/4.12.jpg">
+                <div>
+                    <h4>Cake Balls</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>By using your favorite flavor of cake mix and coatings, you have a people-pleasing treat! The
+                        variations are unlimited, and they can be nicely packaged and given as gifts.</p>
+                </div>
+            </div>
+        </div>
+        <!--**************5***************-->
+        <div class="context">
+            <div class="contextd">
+                <img src="img/index/5.1.jpg">
+                <div>
+                    <h4>Sweet Sausage Marsala</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>this is a great Italian dish that doesn't required a lot of work.sweet Italian sausage is cooked
+                        with onion and green and red bell pepper,and seasoned with Marsala wine and a pinch of
+                        oregano.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/5.2.jpg">
+                <div>
+                    <h4>Quinoa with Asian Flavors</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Here's an Asian twist to making quinoa.What a little ginger,garlic,and soy sauce can do to update
+                        your
+                        favorite side dish!</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/5.3.jpg">
+                <div>
+                    <h4>Ants on a Log</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This is a fun snack that kids can make.It consists of artfully arranged celery,peanut butter,and
+                        raisins.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/5.4.jpg">
+                <div>
+                    <h4>Orange Roasted Salmon</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>I like to make this for company since you can get it ready ahead of time up until the final
+                        baking
+                        step.It looks both pretty and impressive,and the orange flavor is more subtle than you'd
+                        expect.This
+                        is a healthy and elegant meal when served with a leafy salad,brown rice,and asparagus.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/5.5.jpg">
+                <div>
+                    <h4>Apple Banana Smoothie</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Thick and healthy fruit drink with apple,banana and orange juice.The frozen banana takes the
+                        place of
+                        shaved ice and results in a smooth,creamy texture.Serve with dollop of whipped cream for added
+                        effect.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/5.6.jpg">
+                <div>
+                    <h4>Stir Fried Kale</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A great way to use up some of the extra kale you might have in your garden!You can use other
+                        similar greens in this
+                        recipe-spinach,mustard greens,and arugula will all work,A mixture of green is also quite
+                        good.Serve as a salad,as a side
+                        dish,or as a main dish with rice.</p>
+                </div>
+            </div>
+
+
+            <div class="contextd">
+                <img src="img/index/5.7.jpg">
+                <div>
+                    <h4>greek zoodel salad</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Replace spaghetti noodles with "zoodles",noodles made from zucchini,in this Greek salad with
+                        olive,tomato,and feta cheese.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/5.8.jpg">
+                <div>
+                    <h4>Simple lemon Herb Chicken</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Chicken search in lemon and herbs proves that good taste does not always depend on a lot of
+                        ingredients.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/5.9.jpg">
+                <div>
+                    <h4>Blueberry and Banana Steel Cut Oats</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Use your slow cooker to have a big pot full of steel cut oats with bananas and blueberries ready
+                        for you when you awake in the morning.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/5.10.jpg">
+                <div>
+                    <h4>Celebrate Independence Day!</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Find everything you need for your July 4th.festivities.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/5.11.jpg">
+                <div>
+                    <h4>Quinoa and Black Beans</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>whether you're trying quinoa for the first time or just trying a new recipe for quinoa,this
+                        mixture of quinoa,black beans,corn,and
+                        spices will make this dish a new favorite.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/5.12.jpg">
+                <div>
+                    <h4>Annie's Fruit Salad and Cinnamon Chips</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This delicious salsa made with fresh kiwis,apples and berries is a sweet,succulent treat when
+                        served on
+                        homemade cinnamon tortilla chips.Enjoy it as a summer appetizer or an easy dessert.</p>
+                </div>
+            </div>
+
+        </div>
+        <!--**************6***************-->
+        <div class="context">
+
+            <div class="contextd">
+                <img src="img/index/6.1.jpg">
+                <div>
+                    <h4>Belle's Hamburger Buns</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>These hamburger buns are also so easy to make and turn out light and flffy.A quick brush with an
+                        egg wash before baking givens them
+                        a beautiful golden brown color.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/6.2.jpg">
+                <div>
+                    <h4>Mexican Strawberry Water</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Fresh fruit water,or Aguas de Frutas,made with crushed or blended fruit are a common and popular
+                        drink all over Mexico.this recipe is extremely flavorful
+                        and refreshing,especially when fresh strawberries are in season.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/6.3.jpg">
+                <div>
+                    <h4>Juicy Lucy Burgers</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A favorite of Minnesotans!The famous Juicy lucy is pure juicy,cheesy goodness when melted
+                        American cheese is sandwiched between two seasoned ground beef patties.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/6.4.jpg">
+                <div>
+                    <h4>Scrumption Frosted Fudgy Brownies</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>These rich,fudgy browneies are topped with a smooth and creamy chocolate frosting.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/6.5.jpg">
+                <div>
+                    <h4>Boston Baked Beans</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This recipe for boston baked beans uses navy beans,molasses,brown sugar,and ketchup to create a
+                        wonderful old-fashioned baked bean flavor.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/6.6.jpg">
+                <div>
+                    <h4>Grilled corn on the Cob</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Butter,salt and a little pepper are all you really need to bring out corn's natual sweetness on
+                        the grill.</p>
+                </div>
+            </div>
+
+
+            <div class="contextd">
+                <img src="img/index/6.7.jpg">
+                <div>
+                    <h4>Spinach Watermelon-Mint Salad</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A great summer salad with a fresh minty taste and tangy dressing that everyone will love!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/6.8.jpg">
+                <div>
+                    <h4>4th of July BBQ Recipes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Get great recipes for the grill,from baby back ribs and kabobs to burgers and grilled
+                        chicken.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/6.9.jpg">
+                <div>
+                    <h4>Chicken Fiesta Salad</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Salad greens,onions tomatoes are topped with Mexican flavored black beans,corn,and grilled
+                        chicken breasts.This is an attractive and zesty all in one dish.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/6.10.jpg">
+                <div>
+                    <h4>Banana Crumb Muffins</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A basic banana muffin is made extraodinary with a brown sugar crumb topping that will melt your
+                        mouth.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/6.11.jpg">
+                <div>
+                    <h4>Fluffy Pancakes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Tall,fluffy pancakes makes the best breakfast,especially when there's plenty of butter and
+                        syrup.Make it extra special with berries and whipped cream!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/6.12.jpg">
+                <div>
+                    <h4>Banana Banana bread</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This banana a bread recipe is moist and delicious,with loads of banana flavor.It's wonderful
+                        toasted!</p>
+                </div>
+            </div>
+        </div>
+        <!--**************7***************-->
+        <div class="context">
+            <div class="contextd">
+                <img src="img/index/7.1.jpg">
+                <div>
+                    <h4>Ginger sekanjabin</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Sekanjabin is a refreshing Persian drink.This recipe makes a ginger-flavored syrup
+                        which,refreshing soft drink.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/7.2.jpg">
+                <div>
+                    <h4>Chap Chee Noodles</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Stir beef sirloin,Napa cabbage,spinach,and other veggies are tossed with bean thread noodles in
+                        this classic Korean dish.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/7.3.jpg">
+                <div>
+                    <h4>Mousssaka</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Here is a great recipe for moussaka,a Greek dish.It includes sliced eggplant baked in a ground
+                        beef sauce and then smoyhered in
+                        a thin white sauce.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/5.4.jpg">
+                <div>
+                    <h4>Classic Spanish Sangria</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Fruit,rum,red wine and juice-a Spanish classic,you cannot lose!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/7.5.jpg">
+                <div>
+                    <h4>Arroz Con Pollo</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Chicken,rice,black olives,peas,and raisins are baked together in a Dutch oven,creating this
+                        flavorful Central
+                        American-inspired dish.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/7.6.jpg">
+                <div>
+                    <h4>portuguese Custard Tarts-Pasteis de Nata</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A rich egg custard poured into individual pastry-lined muffin cups and baked.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/7.7.jpg">
+                <div>
+                    <h4>Enchiladas verdes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>using a roasted chicken from the grocery saves time in this enchilada recipe with a spicy
+                        tomatillo sauce that
+                        will have your friendss wanting to lick the bow!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/7.8.jpg">
+                <div>
+                    <h4>Puerto Rican Tostones</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Crispy fried plantains.A plantain is a very firm banana.serve as side dish with your meal or as
+                        appetizers.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/7.9.jpg">
+                <div>
+                    <h4>Ckicken Cordon Bleu</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This is a standard recipe for Cordon Bleu,featuring stuffed chicken swimming in a creamy wine
+                        sauce.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/7.10.jpg">
+                <div>
+                    <h4>Bazlama-Turkish Flat Bread</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This simple flatbread gets its tang from yogurt.It's best served warm.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/7.11.jpg">
+                <div>
+                    <h4>quinoa and black beans</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Whether you're trying quinoa for the first time or just trying a new recipe for quinoa,this
+                        mixture of quinoa,black beans,corn,and
+                        spices will make this dish a new favorite.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/7.12.jpg">
+                <div>
+                    <h4>Chicken Marsala</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Herbed chicken in a sweet Marsala and mushroom sauce-sounds simple,and it is simply
+                        delicious.</p>
+                </div>
+            </div>
+        </div>
+        <!--**************8***************-->
+        <div class="context">
+
+            <div class="contextd">
+                <img src="img/index/8.1.jpg">
+                <div>
+                    <h4>Vegetable Stuffed Cannelloni</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>The stuffing is great.Lots of veggies like eggplant and zucchini and non-veggies like
+                        ricotta,parmesan and olive oil.The sauce is sensational.Sherry,cream,garlic and shallots all
+                        heated
+                        until warm and fragrant.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/5.2.jpg">
+                <div>
+                    <h4>Baked Teriyaki Chicken</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A spicy,homemade teriyaki of soy sauce,cider vinegar,ginger and garlic enlivens chicken things or
+                        pieces.
+                        Easy to double for a large group.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/8.3.jpg">
+                <div>
+                    <h4>apple cider Sauce and Pork Loin Chops</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Seasoned pork loin chops baked with apple cider and worcestershre sauce and finished with sherry
+                        make even the pickiest eaters say,"Wow!Serve with mashed potatoes.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/8.4.jpg">
+                <div>
+                    <h4>Meatball Nirvana</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Parmesan cheese,Worcestershire sauce,and red pepper flakes combine to make the perfect
+                        meatball.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/8.5.jpg">
+                <div>
+                    <h4>Chicken Enchiladas</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>No tomatoes in this recipe for chicken enchilada,just a satisfying cheese and chicken filling
+                        with a creamy sauce over all.Kids love these and it's a great way
+                        to use leftover chicken.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/8.6.jpg">
+                <div>
+                    <h4>Slow Cooker Beef Roast</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>impossibly tender beef pot roast with carrots,mushrooms and onions.It's easy in the slow
+                        cooker.The key is searing the meat first.</p>
+                </div>
+            </div>
+
+
+            <div class="contextd">
+                <img src="img/index/8.7.jpg">
+                <div>
+                    <h4>Chicken Breasts with Balsamic Vinegar and Garlic</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>An aromatic,garlicky sauce of Balsamic vinegar and mushrooms graces this chicken dish.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/8.8.jpg">
+                <div>
+                    <h4>Chef John's Stuffed Peppers</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Stuff green bell peppers with a mixture of rice,ground beef and pork sausage for a simple and
+                        satisfying supper.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/8.9.jpg">
+                <div>
+                    <h4>Turkey Cheeseburger meatloaf</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Ground turkey and turkey bacon add lightness to a meatloaf with the taste of a bacon
+                        chesesburger.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/8.10.jpg">
+                <div>
+                    <h4>Celebrate Independence Day!</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Find everything you need for your July 4th festivities.</p>
+                </div>
+            </div>
+
+            <div class="contextd">
+                <img src="img/index/8.11.jpg">
+                <div>
+                    <h4>World's Best Lasagna</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Filling and satisfying,John Chandler's lasagna is our most popular
+                        recipe,withbasil,sausage,ground beef and
+                        three types of cheese,it lives up to its name.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/8.12.jpg">
+                <div>
+                    <h4>Broiled Tilapia Parmesan</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Flavorful recipe for this raised fish that is easy and done in minutes!The fish is broiled with a
+                        creamy cheese coating for an impressive flavor and texture.</p>
+                </div>
+            </div>
+            <!--**************9***************-->
+
+        </div>
+        <!--**************9***************-->
+        <div class="context">
+            <div class="contextd">
+                <img src="img/index/9.1.jpg">
+                <div>
+                    <h4>Clone of a Cinnabon</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Save yourself a lot of money by making your own homemade cinnamon rolls!The dough is made in the
+                        bread machine and everything else is done by hand.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/9.2.jpg">
+                <div>
+                    <h4>Chef John's Baked Eggs</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>The way the spicy sauce mingles with just barely set eggs is very similar, and when you start
+                        scooping this up with toasted chunks of bread, it gets borderline magical.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/9.3.jpg">
+                <div>
+                    <h4>Authentic Mexican Breakfast Tacos</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Quick Easy and Delicious! I learned this recipe from many years of eating with the Mexican cooks
+                        at my restaurant. They like to sneak in breakfast before we open. I've grown to LOVE this
+                        breakfast. If you like spicy food, you will love this.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/9.4.jpg">
+                <div>
+                    <h4>Fluffy Pancakes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Tall and fluffy. These pancakes are just right. Topped with strawberries and whipped cream, they
+                        are impossible to resist.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/9.5.jpg">
+                <div>
+                    <h4>Banana Sour Cream Bread</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>I know, you're probably thinking, 'Oh no! Another banana bread recipe!' But this one is a little
+                        different: the sour cream makes this one so moist it melts in your mouth. The flavor is just
+                        wonderful! This one is great for gift giving and holidays. Loaves freeze well.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/9.6.jpg">
+                <div>
+                    <h4>Waffles I</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>You can keep the batter covered in the fridge for up to a week. Just be sure to whisk well before
+                        using again. You may also use whole wheat flour for this recipe.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/9.7.jpg">
+                <div>
+                    <h4>Pumpkin Bread IV</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This is an all time, excellent, every time recipe. It is very simple, and so well loved by many.
+                        I make these for family, friends, school functions, work functions, for gifts etc. It has always
+                        been raved about - even by kids! I recommend bringing this to your Thanksgiving function; you
+                        will be thanked many times for this delicious taste treat. This is a large quantity, but you
+                        will end up making this size batch more than once. You can also make muffins and small loaves
+                        using this recipe; bake for 30 to 35 minutes.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/9.8.jpg">
+                <div>
+                    <h4>Strawberry Bread</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This is wonderful hot or cold, for breakfast or as a dessert. A definite family favorite!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/9.9jpg">
+                <div>
+                    <h4>Easy Sausage Strata</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This strata is really easy to make. Put it together the day before, then just remove from the
+                        refrigerator and bake. Ham or bacon can be substituted for the sausage. Sometimes I add cooked
+                        chopped broccoli for a change of pace.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/9.10.jpg">
+                <div>
+                    <h4>Chunky Monkey Pancakes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>I love banana pancakes and my daughter loves chocolate chip pancakes, so we came up with this
+                        yummy recipe to make us both happy! Serve with a dollop of soft butter, a sprinkle of powdered
+                        sugar, sliced bananas, and whipped cream with a side of butter pecan or maple syrup.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/9.11.jpg">
+                <div>
+                    <h4>Egg in a Hole</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A delicious runny yolk egg cooked in the center of a piece of toast and eaten with a fork is a
+                        great way to enjoy an egg in a slightly different way. My kids feel fancy when eating these.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/9.12.jpg">
+                <div>
+                    <h4>Strawberry Vanilla Pancakes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Light and fluffy pancakes packed with strawberries. The vanilla makes this breakfast seem like
+                        dessert! Serve with butter and real maple syrup.</p>
+                </div>
+            </div>
+        </div>
+        <!--**************10***************-->
+        <div class="context">
+            <div class="contextd">
+                <img src="img/index/10.1.jpg">
+                <div>
+                    <h4>Tacos in Pasta Shells</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This recipe has a Mexican flavor and is tasty and easy to make. It is great anytime; kids and
+                        adults will love it. Garnish with sliced tomatoes, lettuce and ripe olives, if desired.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/10.2.jpg">
+                <div>
+                    <h4>Maple Salmon</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This is the best and most delicious salmon recipe, and very easy to prepare. I love maple in
+                        everything and put this together one night. My husband totally loved it; he did not like salmon
+                        that much until he had this.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/10.3.jpg">
+                <div>
+                    <h4>Baked Teriyaki Chicken</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A much requested chicken recipe! Easy to double for a large group. Delicious!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/10.4.jpg">
+                <div>
+                    <h4>Angela's Awesome Enchiladas</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>The secret is in the seasonings! I whipped these up on my own using stuff I had on hand.
+                        Shredding the chicken is the most time-consuming step, but it's worth it in the end. Give these
+                        babies a try! Serve with sour cream and a side of Spanish rice.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/10.5.jpg">
+                <div>
+                    <h4>Salisbury Steak</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This recipe has been in my family for years. It's easy to cook, but tastes like it took hours to
+                        make! I usually make enough extra sauce to pour over mashed potatoes. YUM!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/10.6.jpg">
+                <div>
+                    <h4>Bow Ties with Sausage, Tomatoes and Cream</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A friend gave this recipe to me a few years back, and my family can't seem to get enough of it.
+                        It sounds strange with cream in it, but that just enhances the flavor and texture. This is a
+                        very easy recipe.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/10.7.jpg">
+                <div>
+                    <h4>Rosemary Ranch Chicken Kabobs</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This rosemary ranch chicken recipe is so delicious, tender, and juicy the chicken will melt in
+                        your mouth. Even the most picky eater will be begging for the last piece.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/10.8.jpg">
+                <div>
+                    <h4>Slow-Cooker Pepper Steak</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Very tender and flavorful, this recipe is one of our family's favorites. It's great to make ahead
+                        of time in the slow cooker and then serve over rice, egg noodles, or chow mein.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/10.9.jpg">
+                <div>
+                    <h4>Szechwan Shrimp</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Don't let some of the ingredients fool you--this spicy shrimp makes a simple, impressive dish,
+                        which I usually make for company. For more or less heat, adjust amount of red pepper. Serve over
+                        hot steamed rice.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/10.10.jpg">
+                <div>
+                    <h4>Marinated Grilled Shrimp</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A very simple and easy marinade that makes your shrimp so yummy you don't even need cocktail
+                        sauce! Don't let the cayenne pepper scare you, you don't even taste it. My 2 and 4 year-olds
+                        love it and eat more shrimp than their parents! It is also a big hit with company, and easy to
+                        prepare. I make this with frozen or fresh shrimp and use my indoor electric grill if the weather
+                        is not good for outside grilling. Try it with a salad, baked potato, and garlic bread. You will
+                        not be disappointed!!!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/10.11.jpg">
+                <div>
+                    <h4>Italian Breaded Pork Chops</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>My father's side of the family is Sicilian, and has been making these pork chops for at least 3
+                        generations. My husband frequently requests these over my marinated and grilled pork chops when
+                        I give him a choice. If you do not have an oven-proof skillet, you may cook the chops on the
+                        stove at medium-low.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/10.12.jpg">
+                <div>
+                    <h4>Anniversary Chicken I</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>I made this chicken for 100 people at my in-laws' 50th wedding anniversary party. Boy, was it a
+                        hit!</p>
+                </div>
+            </div>
+        </div>
+        <!--**************11***************-->
+        <div class="context">
+            <div class="contextd">
+                <img src="img/index/11.1.jpg">
+                <div>
+                    <h4>Wave Your Flag Cheesecake</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Salute the red, white and blue with this layered dessert studded with fresh blueberries and
+                        strawberries.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/11.2.jpg">
+                <div>
+                    <h4>Grilled Beef Sirloin &amp; Farmer's Market Skewers</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Tender Sirloin marinated in a delicious Mustard-Thyme glaze and paired with colorful squash,
+                        zucchini, onion, and mushroom skewers, all grilled to perfection!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/11.3.jpg">
+                <div>
+                    <h4>Fudgy S'mores Brownie Bars</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A rich fudgy brownie layer on a graham cracker crumb base is spread with creamy chocolate and a
+                        layer of marshmallow creme, dotted with mini marshmallows, and quickly browned under the
+                        broiler.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/11.4.jpg">
+                <div>
+                    <h4>Red Velvet Cupcakes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This mini version of the classic Red Velvet Cake is one of the more popular offerings in bakeries
+                        all across the country. Whip up a batch this holiday season or anytime of the year.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/11.5.jpg">
+                <div>
+                    <h4>Cookies 'n' Creme Fudge</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Creme-filled chocolate cookies are great in this white chocolate fudge.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/11.6.jpg">
+                <div>
+                    <h4>Chicken and Broccoli Alfredo</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Linguini is mixed with pieces of tender chicken and broccoli flowerets and coated with a rich,
+                        satiny Alfredo sauce featuring Campbell's® Condensed Cream of Mushroom Soup to make a quick and
+                        fabulous dish.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/11.7.jpg">
+                <div>
+                    <h4>Brownie Chocolate Chip Cheesecake</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A cream cheese filling tops a crust of chewy chocolate fudge brownies. Garnish with mini
+                        chocolate chips.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/11.8.jpg">
+                <div>
+                    <h4>Original Chex® Party Mix</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Still great after all these years! Chex® party mix has been a party staple for 50 years.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/11.9.jpg">
+                <div>
+                    <h4>Roasted Herb Chicken and Potatoes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Arrange the potatoes, onions, and whole chicken in a pan, season with a piquant Kikkoman Soy
+                        Sauce mixture, and let the oven do the rest!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/11.10.jpg">
+                <div>
+                    <h4>Amazing Muffin Cups</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Eggs, sausage, red bell pepper, and cheese are baked in hash brown potato 'cups' for a delicious
+                        breakfast that will feed a crowd.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/11.11.jpg">
+                <div>
+                    <h4>Easy Teriyaki Kabobs from DOLE</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>These simple, delicious teriyaki chicken kabobs with tomatoes and bell pepper come together in no
+                        time.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/11.12.jpg">
+                <div>
+                    <h4>Summer Strawberry Jam</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Red, ripe strawberries make a classic jam that brings back summer year 'round.</p>
+                </div>
+            </div>
+        </div>
+        <!--**************12***************-->
+        <div class="context">
+            <div class="contextd">
+                <img src="img/index/12.1.jpg">
+                <div>
+                    <h4>Mexican Bean Salad</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>A colorful, spicy, and refreshing bean and corn salad.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/12.2.jpg">
+                <div>
+                    <h4>Mediterranean Greek Salad</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This is a great salad to take to a barbeque. All ingredients are approximate, so add more or less
+                        of any ingredient depending on your own taste.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/12.3.jpg">
+                <div>
+                    <h4>Iced Pumpkin Cookies</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Wonderful spicy iced pumpkin cookies that both kids and adults love!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/12.4.jpg">
+                <div>
+                    <h4>Creamy Au Gratin Potatoes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This is my husband's favorite dish, and he considers it a special occasion every time I make it.
+                        The creamy cheese sauce and the tender potatoes in this classic French dish combine to make a
+                        deliciously addictive experience. It's a great side dish with a roast pork loin or beef
+                        tenderloin. Add a green salad and French bread, and you have found the magic path to a man's
+                        heart. To avoid lumps in your sauce, add the milk just a little at a time as you stir the flour
+                        and butter. Experiment with different cheeses for variety.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/12.5.jpg">
+                <div>
+                    <h4>Janet's Rich Banana Bread</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This is the moistest banana bread that I have ever tasted. It's also very easy to make!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/12.6.jpg">
+                <div>
+                    <h4>Annie's Fruit Salsa and Cinnamon Chips</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Easy to make, tasty fruit salsa and cinnamon tortilla chips. Great as an appetizer or a snack.
+                        Great for anytime!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/12.7.jpg">
+                <div>
+                    <h4>Garlic Chicken</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Simple to make, just dip and bake! Garlicky goodness in a breaded chicken dish. Yum!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/12.8.jpg">
+                <div>
+                    <h4>To Die For Blueberry Muffins</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>These muffins are extra large and yummy with the sugary-cinnamon crumb topping. I usually double
+                        the recipe and fill the muffin cups just to the top edge for a wonderful extra-generously-sized
+                        deli style muffin. Add extra blueberries too, if you want!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/12.9.jpg">
+                <div>
+                    <h4>Quinoa and Black Beans</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Very flavorful alternative to black beans and rice. Quinoa is a nutty grain from South
+                        America.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/12.10.jpg">
+                <div>
+                    <h4>Byrdhouse Blistered Cherry Tomatoes</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>This is an easy, tasty, pretty way to whip up a side dish, or a leading man for a salad, in about
+                        1 minute. Be careful and quick with these - we want 'em blistered, not blown apart!</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/12.11.jpg">
+                <div>
+                    <h4>Asian Avocado</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>Here is a very different and simple way of enjoying avocados. Use low-sodium soy sauce if
+                        desired, but full-flavored is best.</p>
+                </div>
+            </div>
+            <div class="contextd">
+                <img src="img/index/12.12.jpg">
+                <div>
+                    <h4>Alienated Blueberry Muffins</h4>
+                    <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                        <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                    </p>
+                    <p>I got this recipe from my grandmother in New Jersey. They fit the title, because they are out of
+                        this world!</p>
+                </div>
+            </div>
+
+    </div>
+</div>
+</div>
+</div>
+<!--抽屉图片标题-->
+<h1 style="font-size: 40px;padding: 50px 500px;color:white;background-color:#333;text-shadow: 0px 0 10px #fff;">Latest
+    Popular Menus!</h1>
+<!--抽屉图片-->
+<div class="pic">
+    <ul>
+        <li style="background:url(img/pic/p1.jpg);width:660px;border:none;">
+            <article class="pic_a" style="background-color: rgba(0,0,0,0);">
+                <div class="pic_text">
+                    <p>Chef John's Buttermilk Fried Chicken</p>
+                    <p class="pic_description">I love the tangy tenderization that the buttermilk provides.After the
+                        buttermilk soak,dredge the chicken pieces in seasoned flour,and fry them in hot oil until crisp
+                        and cooked.</p>
+                </div>
+            </article>
+        </li>
+        <li style="background:url(img/pic/p2.jpg);background-size:660px 400px;">
+            <article class="pic_a">
+                <div class="pic_text">
+                    <p>Ultra Easy Pineapple Chicken Kabobs</p>
+                    <p class="pic_description">Chicken and pineapple are skewered,brushed with barbeque sauce
+                        ,and grilled for a quick and easy summertime meal.</p>
+                </div>
+            </article>
+        </li>
+        <li style="background:url(img/pic/p3.jpg);background-size:660px 400px;">
+            <article class="pic_a">
+                <div class="pic_text">
+                    <p>Zippy Summer Shrimp</p>
+                    <p class="pic_description">This quick preparation of shrimp pan-fried with garlic,red pepper
+                        flakes,lemon juice,and basil accompaniments.</p>
+                </div>
+            </article>
+        </li>
+        <li style="background:url(img/pic/p4.jpg);background-size:660px 400px;">
+            <article class="pic_a">
+                <div class="pic_text">
+                    <p>Perfect Summer Fruit Salad</p>
+                    <p class="pic_description">Layers of fresh fruit are soaked a citrusy sauce in this colorful
+                        salad.</p>
+                </div>
+            </article>
+        </li>
+        <li style="background:url(img/pic/p5.jpg);background-size:660px 400px;">
+            <article class="pic_a">
+                <div class="pic_text">
+                    <p>Quick Quiche</p>
+                    <p class="pic_description">When you don't have time to make a pastry crust,try this quick crustless
+                        version.You may add any other goddies you like, such as ham, chicken,crab,shrimp or
+                        broccoli.</p>
+                </div>
+            </article>
+        </li>
+        <li style="background:url(img/pic/p6.jpg);background-size:660px 400px;">
+            <article class="pic_a">
+                <div class="pic_text">
+                    <p>Refreshing Watermelon Lemonade Slush</p>
+                    <p class="pic_description">"So good and so easy! Plus, I now know to freeze my surplus melon for use
+                        later. I love it!" – Tracey Ferrari Posner</p>
+                </div>
+            </article>
+        </li>
+        <li style="background:url(img/pic/p7.jpg);background-size:660px 400px;">
+            <article class="pic_a">
+                <div class="pic_text">
+                    <p>Mongolian Beef from the Slow Cooker</p>
+                    <p class="pic_description">Whether you freeze this mixture of beef and carrots in a sweet-and-savory
+                        Asian-style sauce or put it straight into the slow cooker,it's easy and delicious!</p>
+                </div>
+            </article>
+        </li>
+        <li style="background:url(img/pic/p8.jpg);background-size:660px 400px;">
+            <article class="pic_a">
+                <div class="pic_text">
+                    <p>Prize Winning Baby Back Ribs</p>
+                    <p class="pic_description">Baby back ribs,seasoned with a cumin,chilipowder,and paprika spice rub,
+                        are slow-ccoked on your grill over indirect heat until fall-off-the-bone tender.</p>
+                </div>
+            </article>
+        </li>
+        <li style="background:url(img/pic/p9.jpg);background-size:660px 400px;">
+            <article class="pic_a">
+                <div class="pic_text">
+                    <p>Strawberry Pie</p>
+                    <p class="pic_description">"This is my favorite pie. It is very easy to make. I got the recipe many
+                        years ago in North Jersey.
+                        <br/> It is from the Sussex County Strawberry Farms."</p>
+                </div>
+            </article>
+        </li>
+    </ul>
+</div>
+<!--底部-->
+<footer>
+    <div style="width: 1340px;height: 250px;background-color: #333333;padding-left: 100px;">
+        <div style="width:400px;height:240px;float: left;padding-left: 20px">
+            <h2>Information</h2>
+            <br>
+            <a href="#">Contact Customer Service</a><br><br>
+            <a href="#">International customers</a><br><br>
+            <a href="#">Free Delivery</a><br><br>
+            <a href="#">View your Wishlist</a><br><br>
+            <a href="#">Returns</a><br><br>
+        </div>
+        <div style="width:400px;height:240px;float: left;">
+            <h2>More details</h2>
+            <br>
+            <a href="#">About us</a><br><br>
+            <a href="#">Privacy Policy</a><br><br>
+            <a href="#">Terms & Condition</a><br><br>
+            <a href="#">Secure payment</a><br><br>
+            <a href="#">Site map</a><br>
+        </div>
+        <div style="width:400px;height:240px;float: left;">
+            <h2>Contact us</h2>
+            <img style="padding-top:30px;width: 20px;height: 100px;position: absolute;" src="img/footer-icons.png;">
+            <br>
+            <br>
+            <a href="#" style="margin-left: 30px">QingDao University</a>
+
+            <br>
+            <br>
+            <a href="#" style="margin-left: 30px">sacnfSophia@icould.com</a>
+            <br>
+            <br>
+            <a href="#" style="margin-left: 30px">+86 186-6169-6061</a>
+            <br>
+            <img style="width: 40px;margin: 20px 5px;padding-left: 10px" src="img/qq.png">
+            <img style="width: 40px;margin: 20px 5px" src="img/wx.png">
+            <img style="width: 40px;margin: 20px 5px" src="img/wb.png">
+        </div>
+    </div>
+    <p style="height:30px;padding-left: 400px;color: white;">Copyright &copy; 2016 CuisineSchool. Design by Sunshine : Sophia , Lucy ,
+        Lavender .</p>
+</footer>
+<!--页面Script-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    //菜单鼠标滑动效果
+    $(".body-nav .body-nav-n ul li").mouseover(function () {
+        $(this).addClass("hover").siblings("li").removeClass("hover");
+        var _index1 = $(this).index();
+        $(".body-nav-d .context").eq(_index1).show().siblings().hide();
+    });
+
+    //////
+    $(".imgs-btn ul li").click(function () {
+        var _index2 = $(this).index();
+        $(this).addClass("select").siblings().removeClass("select");
+        $(".imgs ul li").eq(_index2).fadeIn(300).siblings().fadeOut(100);
+    });
+    //    自动计时器
+    var timer = setInterval("change()", 3000);
+    var i = 1;
+    function change() {
+        $(".imgs ul li").eq(i).fadeIn(2000).siblings().fadeOut(500);
+        $(".imgs-btn ul li").eq(i).addClass("select").siblings().removeClass("select");
+        if (i == 4) {
+            i = 0;
+        } else {
+            i++;
+        }
+    }
+    //二级菜单鼠标滑动效果
+
+    $(".top-nav ul li.recipe").hover(function () {
+        $(this).find(".menu").slideDown();//向下慢慢展开
+    }, function () {
+        $(this).find(".menu").slideUp();//向上收缩
+    });
+    //    抽屉效果
+    $(".pic ul li").hover(function () {
+        $(this).stop(true).animate({width: "660px"}, 500).siblings().stop(true).animate({width: "100px"}, 500);
+        $(this).find(".pic_a").css("background", "rgba(0,0,0,0)");
+        $(this).siblings().find(".pic_a").css("background", "rgba(0,0,0,0.7)");
+    })
+
+</script>
+</body>
+</html>

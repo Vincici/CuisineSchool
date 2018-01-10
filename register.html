@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuisine School</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body style="background-image:url(img/bg1.jpg);background-size: 1450px 1000px;">
+<!--导航栏-->
+<div class="top">
+    <div class="top-logo">
+        <a><img src="img/logo2.jpg" height="140" width=100% alt="Logo" title="Logo"></a>
+    </div>
+    <div class="top-nav">
+        <ul>
+            <li class="active" style="width: 22%;"><a href="index.html"><em>Home</em></a></li>
+            <li class="recipe" style="width: 22%;"><a href="recipes.html"><em>Recipes</em></a>
+                <div class="menu">
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes1.png"><br/>
+                        <p>Appetizer</p>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes2.png"><br/>
+                        <span>Breakfast &amp; Brunch</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes3.png"><br/>
+                        <span>Chicken</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes4.png"> <br/>
+                        <span>Dessert</span>
+                    </a>
+                    <br/>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes5.png"> <br/>
+                        <span>Healthy</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes6.png"> <br/>
+                        <span>Holidays and Events</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes7.png"> <br/>
+                        <span>Magazine Favorites</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes8.png"> <br/>
+                        <span>Main Dish</span>
+                    </a>
+                    <br/>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes9.png"> <br/>
+                        <span>Quick &amp; Easy</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes10.png"> <br/>
+                        <span>Slow Cooker</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img\nav\recipes11.png"> <br/>
+                        <span>Trusted Brands</span>
+                    </a>
+                    <a href="">
+                        <img src="img/nav/recipes12.png"> <br/>
+                        <span>Vegetarian</span>
+                    </a>
+                </div>
+            </li>
+            <li class="shop" style="width: 28%;"><a href="shop.html"><em>Online Shop</em></a></li>
+            <li class="community" style="width: 28%;"><a href="community.html"><em>Community</em></a></li>
+        </ul>
+        <div class="search">
+            <form action="" method="get">
+                <input type="submit" value="">
+                <input type="text" name="search" value="" placeholder="Find a recipe...">
+            </form>
+        </div>
+    </div>
+    <div class="top-user">
+        <ul>
+            <li>
+                <img class="user" src="img/user.png" height="30">
+                <a class="a2" href="register.html">Register</a>
+                <a class="a1" href="login.html">Login</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div>
+    <a style="display: none;" id="topbtn" title="回到顶部">
+        <img src="img/topbtn.png" style="width: 60px;height: 60px;"></a>
+</div>
+
+<!--登陆窗口-->
+<div class="register-box">
+    <p class="register-logo">Registration</p>
+        <div class="register">
+            <form>
+                <p>USERNAME:</p>
+                <p><input type="text" class="r-user" value="" /></p>
+                <p>EMAIL:</p>
+                <p><input type="text" class="r-user" value=""/></p>
+                <p>PASSWORD:</p>
+                <p><input type="text" class="r-user" value=""/></p>
+                <p>RE-ENTER PASSWORD:</p>
+                <p><input type="text" class="r-user" value=""/></p>
+                <p>MOBILE NUMBER:</p>
+                <p><input type="text" class="r-user" value=""/></p>
+                <p><input type="text" class="r-user" style="width: 250px" value="" placeholder="SECURITYCODE..."/>
+                    <img src="img/yzm.jpg" style="width: 120px;height: 40px;margin-left: 50px;position: absolute"></p>
+                <p><input type="submit" class="login-submit" value="Register now"/></p>
+                <p>By clicking this button, you are agree to my <a href="#">Policy Terms and Conditions</a>.
+                </p>
+            </form>
+        </div>
+
+</div>
+<script type="text/javascript">
+
+    //二级菜单鼠标滑动效果
+
+    $(".top-nav ul li.recipe").hover(function () {
+        $(this).find(".menu").slideDown();//向下慢慢展开
+    }, function () {
+        $(this).find(".menu").slideUp();//向上收缩
+    });
+    $(".pic ul li").hover(function () {
+        $(this).stop(true).animate({width: "660px"}, 500).siblings().stop(true).animate({width: "100px"}, 500);
+        $(this).find(".pic_a").css("background", "rgba(0,0,0,0)");
+        $(this).siblings().find(".pic_a").css("background", "rgba(0,0,0,0.7)");
+    })
+
+</script>
+</body>
+</html>

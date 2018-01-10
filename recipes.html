@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuisine School</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<div class="top">
+    <div class="top-logo">
+        <a><img src="img/logo2.jpg" height="140px" width=100% alt="Logo" title="Logo"></a>
+    </div>
+    <div class="top-nav">
+        <ul>
+            <li class="active" style="width: 22%;"><a href="index.html"><em>Home</em></a></li>
+            <li class="recipe" style="width: 22%; background: #333;"><a href="recipes.html"><em>Recipes</em></a>
+                <div class="menu">
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes1.png"><br/>
+                        <p>Appetizer</p>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes2.png"><br/>
+                        <span>Breakfast &amp; Brunch</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes3.png"><br/>
+                        <span>Chicken</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes4.png"> <br/>
+                        <span>Dessert</span>
+                    </a>
+                    <br/>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes5.png"> <br/>
+                        <span>Healthy</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes6.png"> <br/>
+                        <span>Holidays and Events</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes7.png"> <br/>
+                        <span>Magazine Favorites</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes8.png"> <br/>
+                        <span>Main Dish</span>
+                    </a>
+                    <br/>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes9.png"> <br/>
+                        <span>Quick &amp; Easy</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img/nav/recipes10.png"> <br/>
+                        <span>Slow Cooker</span>
+                    </a>
+                    <a href="/recipes/76/appetizers-and-snacks/">
+                        <img src="img\nav\recipes11.png"> <br/>
+                        <span>Trusted Brands</span>
+                    </a>
+                    <a href="">
+                        <img src="img/nav/recipes12.png"> <br/>
+                        <span>Vegetarian</span>
+                    </a>
+                </div>
+            </li>
+            <li class="shop" style="width: 28%;"><a href="shop.html"><em>Online Shop</em></a></li>
+            <li class="community" style="width: 28%;"><a href="community.html"><em>Community</em></a></li>
+        </ul>
+        <div class="search">
+            <form action="" method="get">
+                <input type="submit" value="">
+                <input type="text" name="search" value="" placeholder="Find a recipe...">
+            </form>
+        </div>
+    </div>
+    <div class="top-user">
+        <ul>
+            <li>
+                <img class="user" src="img/user.png" height="30">
+                <a class="a2" href="register.html">Register</a>
+                <a class="a1" href="login.html">Login</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div>
+    <a style="display: none;" id="topbtn" title="回到顶部">
+        <img src="img/topbtn.png" style="width: 60px;height: 60px;"></a>
+</div>
+<!--目录-->
+<div class="categories">
+    <p>Popular Categories</p>
+</div>
+<div class="categories-context">
+        <a href="#">
+            <img src="img/nav/recipes1.png"><br/>
+            <p>Appetizer</p>
+        </a>
+        <a href="#">
+            <img src="img/nav/recipes2.png"><br/>
+            <span>Breakfast &amp; Brunch</span>
+        </a>
+        <a href="#">
+            <img src="img/nav/recipes3.png"><br/>
+            <span>Chicken</span>
+        </a>
+        <a href="#">
+            <img src="img/nav/recipes4.png"> <br/>
+            <span>Dessert</span>
+        </a>
+
+        <a href="#">
+            <img src="img/nav/recipes5.png"> <br/>
+            <span>Healthy</span>
+        </a>
+        <a href="#">
+            <img src="img/nav/recipes6.png"> <br/>
+            <span>Holidays and Events</span>
+        </a>
+        <a href="#">
+            <img src="img/nav/recipes7.png"> <br/>
+            <span>Magazine Favorites</span>
+        </a>
+        <a href="#">
+            <img src="img/nav/recipes8.png"> <br/>
+            <span>Main Dish</span>
+        </a>
+
+        <a href="#">
+            <img src="img/nav/recipes9.png"> <br/>
+            <span>Quick &amp; Easy</span>
+        </a>
+        <a href="#">
+            <img src="img/nav/recipes10.png"> <br/>
+            <span>Slow Cooker</span>
+        </a>
+        <a href="#">
+            <img src="img\nav\recipes11.png"> <br/>
+            <span>Trusted Brands</span>
+        </a>
+        <a href="#">
+            <img src="img/nav/recipes12.png"> <br/>
+            <span>Vegetarian</span>
+        </a>
+</div>
+<!--***********瀑布流菜单************-->
+<div>
+    <p class="recipes-title">Recipes</p>
+    <ul class="recipes">
+        <li class="r1">
+            <img src="img/recipes/1.jpg">
+            <div>
+                <h4>Caprese Salad with Grilled Flank Steak</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Top your Caprese salad with grilled flank steak for a quick an easy summer dinner.</p>
+            </div>
+        </li>
+        <li class="r2"><img src="img/recipes/2.jpg">
+            <div>
+                <h4>Ramadan Recipes</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>With so many hours of daylight,you'll need plenty of fuel before the fast-and easy recipes after
+                    dusk.</p>
+            </div>
+        </li>
+        <li class="r3"><img src="img/recipes/3.jpg">
+            <div>
+                <h4>Slow Cooker Moscow Chicken</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Chicken thighs turn tender and delicious when wrapped in smokey bacon and slow cooked with Russian
+                    dressing.</p>
+            </div>
+        </li>
+        <li class="r4"><img src="img/recipes/4.jpg">
+            <div>
+                <h4>Sophie's Zucchini Bread</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Extra dense with zucchini,this loaf has the classic combination of cinnamon and nuts to tempt you
+                    into a sumptuous oblivion.</p>
+            </div>
+        </li>
+        <li class="r5"><img src="img/recipes/5.jpg">
+            <div>
+                <h4>Perfect Summer Fruit Salad</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Layers of fresh are soaked a citrusy sauce in this colorful salad.</p>
+            </div>
+        </li>
+        <li class="r6"><img src="img/recipes/6.jpg">
+            <div>
+                <h4>Old Fashioned Potato Salad</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>This is potato salad the old-fashioned way,with eggs,celery and relish.</p>
+            </div>
+        </li>
+        <li class="r7"><img src="img/recipes/7.jpg">
+            <div>
+                <h4>Chicken Broccoli Salad</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>This broccoli salad is a great way to use up leftover grilled chicken.The tangy mayonnaise dressing
+                    is easy to whip up,too.</p>
+            </div>
+        </li>
+        <li class="r8"><img src="img/recipes/8.jpg">
+            <div>
+                <h4>Picnic Marinated Summer Slaw</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>This easy-to-prepare slaw recipe is a little different from the rest.A tangy vinaigrette dressing is
+                    simmered and poured over cabbage,cucumbers,and tomatoes for a refreshing slaw that is perfect for
+                    picnics.</p>
+            </div>
+        </li>
+        <li class="r9"><img src="img/recipes/9.jpg">
+            <div>
+                <h4>The Real Mojito</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Considered Cuba's national drink,this lime and rum cocktail is a favorite with
+                    pirates,swashbucklers,and colorful characters in the Caribbean and beyond.</p>
+            </div>
+        </li>
+        <li class="r10"><img src="img/recipes/10.jpg">
+            <div>
+                <h4>Sangria!Sangria!</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>The BEST sangria recipe i've been able to hone to perfection!If you like a sweeter Sangria,use ginger
+                    able in place of club soda.</p>
+            </div>
+        </li>
+        <li class="r11"><img src="img/recipes/11.jpg">
+            <div>
+                <h4>Banana Crumb Muffins</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>A basic banana muffin is made extraordinary with a brown sugar crumb topping that will melt in your
+                    mouth.</p>
+            </div>
+        </li>
+        <li class="r12"><img src="img/recipes/12.jpg">
+            <div>
+                <h4>World's Best Lasagna</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Filling and satisfying,john Chandler's lasagna is our most popular recipe.With basil,sausage,groud
+                    beef and three types of cheese,it lives up to its name. </p>
+            </div>
+        </li>
+        <li class="r13"><img src="img/recipes/13.jpg">
+            <div>
+                <h4>Good Old Fashioned Pancakes</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Make delious,fluffy pancakes from scratch.This recipes uses 7 ingredients you probably
+                    already have.</p>
+            </div>
+        </li>
+
+        <li class="r14"><img src="img/recipes/14.jpg">
+            <div>
+                <h4>best Brownies</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Cakey on the outside and fudgy in the middle,this easy brownies recipe really is the best!Done in an
+                    hour.</p>
+            </div>
+        </li>
+
+        <li class="r15"><img src="img/recipes/15.jpg">
+            <div>
+                <h4>slow Cooker Chichen and Dumplings</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Easy,creamy chicken and dumplings made from refrigerator biscuits,slow cooked to comfort-food
+                    perfection.</p>
+            </div>
+        </li>
+
+        <li class="r16"><img src="img/recipes/16.jpg">
+            <div>
+                <h4>Downeast Maine pumpkin Bread</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>The classic moist pumpkin bread from Down East is spiced with cinnamon,ginger,nutmeg and cloves.This
+                    bread improves with age,so plan to make it a day ahead if possible.</p>
+            </div>
+        </li>
+
+        <li class="r17"><img src="img/recipes/17.jpg">
+            <div>
+                <h4>Brown Sugar Meatloaf</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>This brown sugar meatloaf is glazed with brown sugar and ketchup for a moist and flavorful weeknight
+                    dinner.</p>
+            </div>
+        </li>
+
+        <li class="r18"><img src="img/recipes/18.jpg">
+            <div>
+                <h4>Mom's Zucchini bread</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>A moist delicious zucchini bread flavored with walnuts and cinnamon.Easy to bake and freeze,this
+                    recipe makes two loaves.</p>
+            </div>
+        </li>
+
+        <li class="r19"><img src="img/recipes/19.jpg">
+            <div>
+                <h4>Baked Zitil</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Spaghetti sauce and three kinds of Italian cheeses make a surprisingly quick and budget-friendly
+                    baked ziti that's perfect for a weeknight meal.</p>
+            </div>
+        </li>
+
+        <li class="r20">
+            <img src="img/recipes/20.jpg">
+            <div>
+                <h4>Too much Chocolate Cake</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Start with a box of chocolate cake mix and add a few ingredients like sour cream and cjocolate chips
+                    to make a moist,intensity-flavored chocolate cake that will win you First Prize from your friends
+                    and familt.</p>
+            </div>
+        </li>
+
+        <li class="r21">
+            <img src="img/recipes/21.jpg">
+            <div>
+                <h4>Chantal's New York Cheesecake</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Why go to the Cheesecake Factory to get a taste of this favorite dessert when you can make your own
+                    cheesecake at home with this recipe.</p>
+            </div>
+        </li>
+
+        <li class="r22">
+            <img src="img/recipes/22.jpg">
+            <div>
+                <h4>Slow Cooker Chicken Taco Soup</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>A hearty combination of beans,corn,tomatoes,and taco seasonings,slow cooked with Cheddar cheese,sour
+                    cream,and crushed tortilla chips.Made mostly of canned ingredient,this tasty soup lets the slow
+                    cooker do the work so you don't have to!</p>
+            </div>
+        </li>
+
+        <li class="r23">
+            <img src="img/recipes/23.jpg">
+            <div>
+                <h4>Clone of Cinnabon</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Save yourself a lot of money by making your own homemade cinnamon rolls!The dough is made in the
+                    bread machine and everything else is done by hand.</p>
+            </div>
+        </li>
+
+        <li class="r24">
+            <img src="img/recipes/24.jpg">
+            <div>
+                <h4>Chicken Cordon Bleu II</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>This is standard recipe for Cordon Bleu,featuring stuffed chicken swimming in a creamy wine
+                    sauce.</p>
+            </div>
+        </li>
+
+        <li class="r25">
+            <img src="img/recipes/25.jpg">
+            <div>
+                <h4>Carrot Cake III</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>A simple,moist,yummy carrot cake with cream cheese frosting.</p>
+            </div>
+        </li>
+
+        <li class="r26">
+            <img src="img/recipes/26.jpg">
+            <div>
+                <h4>Apple Crisp II</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Cinnamon-spiced apples are baked with a sweet oat crumble topping in this easy apple crisp.Serve warm
+                    with a scoop of vanilla ice cream.</p>
+            </div>
+        </li>
+
+        <li class="r27">
+            <img src="img/recipes/27.jpg">
+            <div>
+                <h4>baked Teriyaki Chicken </h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>A spicy,homemade teriyaki of soy sayce,cider vinegar,ginger and garlic enlivens chicken things or
+                    pieces.Easy to double for a large group.</p>
+            </div>
+        </li>
+
+        <li class="r28">
+            <img src="img/recipes/28.jpg">
+            <div>
+                <h4>Guacamole</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Cilantro and cayenne give this classic guacamole a taste kick.Serve it smooth or chunky.</p>
+            </div>
+        </li>
+
+        <li class="r29">
+            <img src="img/recipes/29.jpg">
+            <div>
+                <h4>Boilermaker Tailgate Chili</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Ground beef,Italian sausage,beans,and a tomato base come together with lots of flavor and spice in
+                    this popular chili recipe.It's perfect for tailgating before football games or any time of year.</p>
+            </div>
+        </li>
+
+        <li class="r30">
+            <img src="img/recipes/30.jpg">
+            <div>
+                <h4>Sloppy Joes II</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Ground beef,onion,green pepper,and ketchup are seasoned with garlic powder and sweetened with brown
+                    sugar to make this hearty meat filling.Serve on hamburger.</p>
+            </div>
+        </li>
+
+        <li class="r31">
+            <img src="img/recipes/31.jpg">
+            <div>
+                <h4>Taco Seasoning I</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Chili powder,cumin,paprika,and a few other easy-to-find spices make up this taco mix recipe.Cheaper
+                    than packaged versions!</p>
+            </div>
+        </li>
+
+        <li class="r32">
+            <img src="img/recipes/32.jpg">
+            <div>
+                <h4>Big Soft Ginger Cookies</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Made with a hint of molasses,these ginger cookies stay soft for days.</p>
+            </div>
+        </li>
+
+        <li class="r33">
+            <img src="img/recipes/33.jpg">
+            <div>
+                <h4>Zesty Slow Cooker Chicken Barbecue</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Use your slow cooker to prepare this graet twist on basic barbecue chicken.It is easy to prepare and
+                    the sauce also makes a great topping for baked potatoes.</p>
+            </div>
+        </li>
+
+        <li class="r34">
+            <img src="img/recipes/34.jpg">
+            <div>
+                <h4>Quinoa and Black Beans</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Whether you're trying quinoa for the first time or just trying a new recipe for quinoa,this mixture
+                    of quinoa,black beans,corn,and spices will make this dish a new favorite.</p>
+            </div>
+        </li>
+
+        <li class="r35">
+            <img src="img/recipes/35.jpg">
+            <div>
+                <h4>Easy Sugar Cookies</h4>
+                <p style="border-bottom: 1px dashed #ddd">Difficulty:
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/fstar.jpg">
+                    <img style="width: 20px;height: 20px;margin: 0px;padding: 0px;" src="img/recipes/star.jpg">
+                </p>
+                <p>Quick and easy sugar cookies!Terrific plain or with candies in them.This recipe uses basic
+                    ingredients you probably altready have.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--详细信息菜单***************-->
+<div class="Layer"></div>
+
+<div id="d1" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d1.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png"/>
+        <p class="rdp"> prep</br>20m</p>
+        <p class="rdp">Cook</br>10m</p>
+        <p class="rdp">Ready In</br>35m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Mix tomatoes, mozzarella, basil, 1 clove minced garlic, and 1 tablespoon olive oil in a bowl; toss to
+                coat. Cover bowl and refrigerate.</p>
+            <img src="img/recipes/l2.png">
+            <p>Preheat an outdoor grill for medium-high heat and lightly oil the grate.</p>
+            <img src="img/recipes/l3.png">
+            <p>Place steak in a large resealable bag; add 1 clove minced garlic, 1 tablespoon olive oil, salt, and
+                pepper. Seal the bag and distribute the oil mixture over the steak.</p>
+            <img src="img/recipes/l4.png">
+            <p>Cook the steak on the preheated grill to your desired degree of doneness, about 5 minutes per side for
+                medium. An instant-read thermometer inserted into the center should read 140 degrees F (60 degrees C).
+                Let stand for 5 minutes before thinly slicing across the grain.</p>
+            <img src="img/recipes/l5.png">
+            <p>Divide lettuce onto 4 serving plates; drizzle about 1 1/2 teaspoons balsamic vinegar and 1 1/2 teaspoons
+                olive oil onto each lettuce portion. Top each salad with 1/4 the steak and 1/4 the tomato mixture.</p>
+        </div>
+    </div>
+</div>
+<div id="d2" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d2.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>20m</p>
+        <p class="rdp">Cook<br>40m</p>
+        <p class="rdp">Ready In<br>1h</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>In a small bowl combine yogurt, cucumber, dill, salt, pepper and mayonnaise and mix well. Chill for at least 30 minutes.</p>
+            <img src="img/recipes/l2.png">
+            <p>In a large bowl mash chickpeas until thick and pasty; don't use a blender, as the consistency will be too thin. In a blender,
+                process onion, parsley and garlic until smooth. Stir into mashed chickpeas.</p>
+            <img src="img/recipes/l3.png">
+            <p>In a small bowl combine egg, cumin, coriander, salt, pepper, cayenne, lemon juice and baking powder. Stir into chickpea mixture
+                along with olive oil. Slowly add bread crumbs until mixture is not sticky but will hold together; add more or less bread crumbs, as
+                needed. Form 8 balls and then flatten into patties.</p>
+            <img src="img/recipes/l4.png">
+            <p>Heat 1 inch of oil in a large skillet over medium-high heat. Fry patties in hot oil until brown on both sides. Serve two falafels
+                in each pita half topped with chopped tomatoes and cucumber sauce.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d3" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d3.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>10m</p>
+        <p class="rdp">Cook<br>5m</p>
+        <p class="rdp">Ready In<br>5h10m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Heat a large skillet over medium-high heat. Cook chicken until well browned on both sides. Allow chicken to cool slightly.</p>
+            <img src="img/recipes/l2.png">
+            <p>Wrap each thigh in a piece of bacon, and place in slow cooker. Sprinkle garlic and ginger over the chicken; top with Russian dressing. Cook on Low heat for 5 to 6 hours. Season to taste with salt and pepper.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d4" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d4.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>15m</p>
+        <p class="rdp">Cook<br>45m</p>
+        <p class="rdp">Ready In<br>1h</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Preheat oven to 325 degrees F (165 degrees C). Grease an 8x4 inch loaf pan.</p>
+            <img src="img/recipes/l2.png">
+            <p>In a bowl, beat together the zucchini, sugar, egg, and oil. In a separate bowl, sift
+                together the flour, salt, baking soda, and baking powder; stir in the cinnamon and lemon zest.
+                Stir the flour mixture into the zucchini mixture just until blended. Pour the batter into the prepared pan.</p>
+            <img src="img/recipes/l3.png">
+            <p>Bake 45 minutes in the preheated oven, until a knife inserted in the center comes out clean. Remove from heat,
+                and cool about 10 minutes before turning out onto a wire rack to cool completely.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d5" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d5.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>25m</p>
+        <p class="rdp">Cook<br>5m</p>
+        <p class="rdp">Ready In<br>3h30m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Bring orange juice, lemon juice, brown sugar, orange zest, and lemon zest to a boil in a saucepan over medium-high heat. Reduce heat to medium-low, and simmer until slightly thickened, about 5 minutes. Remove from heat, and stir in vanilla extract. Set aside to cool.</p>
+            <img src="img/recipes/l2.png">
+            <p>Layer the fruit in a large, clear glass bowl in this order: pineapple, strawberries, kiwi fruit, bananas, oranges, grapes, and blueberries. Pour the cooled sauce over the fruit. Cover and refrigerate for 3 to 4 hours before serving.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d6" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d6.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>45m</p>
+        <p class="rdp">Cook<br>15m</p>
+        <p class="rdp">Ready In<br>1h</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Bring a large pot of salted water to a boil. Add potatoes and cook until tender but still firm, about 15 minutes. Drain, cool, peel and chop.</p>
+            <img src="img/recipes/l2.png">
+            <p>Place eggs in a saucepan and cover with cold water. Bring water to a boil; cover, remove from heat, and let eggs stand in hot water for 10 to 12 minutes. Remove from hot water, cool, peel and chop.</p>
+            <img src="img/recipes/l3.png">
+            <p>In a large bowl, combine the potatoes, eggs, celery, onion, relish, garlic salt, celery salt, mustard, pepper and mayonnaise. Mix together well and refrigerate until chilled.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d7" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d7.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>15m</p>
+        <p class="rdp">Cook<br>0m</p>
+        <p class="rdp">Ready In<br>1h15m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Combine broccoli, chicken, walnuts, and green onions in a large bowl.</p>
+            <img src="img/recipes/l2.png">
+            <p>Whisk mayonnaise, vinegar, and sugar together in a bowl until well blended.</p>
+            <img src="img/recipes/l3.png">
+            <p>Pour mayonnaise dressing over broccoli mixture; toss to coat.</p>
+            <img src="img/recipes/l4.png">
+            <p>Cover and refrigerate until chilled, if desired. Sprinkle with crumbled bacon to serve.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d8" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d8.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>20m</p>
+        <p class="rdp">Cook<br>5m</p>
+        <p class="rdp">Ready In<br>2h25m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Combine cabbage, cucumber, green bell pepper, tomato, and green onions in a large bowl.</p>
+            <img src="img/recipes/l2.png">
+            <p>Cook and stir sugar, vegetable oil, vinegar, salt, and pepper together in a saucepan over medium heat until sugar dissolves, about 5 minutes. Remove from heat and allow to cool. Pour marinade over vegetables and stir to coat. Marinate slaw in the refrigerator for at least 2 hours.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d9" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d9.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>10m</p>
+        <p class="rdp">Cook<br>10m</p>
+        <p class="rdp">Ready In<br>1h</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Place mint leaves and 1 lime wedge into a sturdy glass. Use a muddler to crush the mint and lime to release
+                the mint oils and lime juice. Add 2 more lime wedges and the sugar, and muddle again to release the lime juice.
+                Do not strain the mixture. Fill the glass almost to the top with ice. Pour the rum over the ice, and fill the
+                glass with carbonated water. Stir, taste, and add more sugar if desired. Garnish with the remaining lime wedge.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d10" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d10.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>10m</p>
+        <p class="rdp">Cook<br>20m</p>
+        <p class="rdp">Ready In<br>30m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>In a large pitcher or bowl, mix together the brandy, lemon juice, lemonade concentrate, orange juice, red wine, triple sec, and sugar. Float slices of lemon, orange and lime, and maraschino cherries in the mixture. Refrigerate overnight for best flavor. For a fizzy sangria, add club soda just before serving.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d11" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d11.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>15m</p>
+        <p class="rdp">Cook<br>20m</p>
+        <p class="rdp">Ready In<br>35m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Preheat oven to 375 degrees F (190 degrees C). Lightly grease 10 muffin cups, or line with muffin papers.</p>
+            <img src="img/recipes/l2.png">
+            <p>In a large bowl, mix together 1 1/2 cups flour, baking soda, baking powder and salt. In another bowl, beat together bananas, sugar, egg and melted butter. Stir the banana mixture into the flour mixture just until moistened. Spoon batter into prepared muffin cups.</p>
+            <img src="img/recipes/l3.png">
+            <p>In a small bowl, mix together brown sugar, 2 tablespoons flour and cinnamon. Cut in 1 tablespoon butter until mixture resembles coarse cornmeal. Sprinkle topping over muffins.</p>
+            <img src="img/recipes/l4.png">
+            <p>Bake in preheated oven for 18 to 20 minutes, until a toothpick inserted into center of a muffin comes out clean.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d12" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d12.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>30m</p>
+        <p class="rdp">Cook<br>2h30m</p>
+        <p class="rdp">Ready In<br>3h15m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>In a Dutch oven, cook sausage, ground beef, onion, and garlic over medium heat until well browned. Stir in crushed tomatoes, tomato paste, tomato sauce, and water. Season with sugar, basil, fennel seeds, Italian seasoning, 1 tablespoon salt, pepper, and 2 tablespoons parsley. Simmer, covered, for about 1 1/2 hours, stirring occasionally.</p>
+            <img src="img/recipes/l2.png">
+            <p>Bring a large pot of lightly salted water to a boil. Cook lasagna noodles in boiling water for 8 to 10 minutes. Drain noodles, and rinse with cold water. In a mixing bowl, combine ricotta cheese with egg, remaining parsley, and 1/2 teaspoon salt.</p>
+            <img src="img/recipes/l3.png">
+            <p>Preheat oven to 375 degrees F (190 degrees C).</p>
+            <img src="img/recipes/l4.png">
+            <p>To assemble, spread 1 1/2 cups of meat sauce in the bottom of a 9x13 inch baking dish. Arrange 6 noodles lengthwise over meat sauce. Spread with one half of the ricotta cheese mixture. Top with a third of mozzarella cheese slices. Spoon 1 1/2 cups meat sauce over mozzarella, and sprinkle with 1/4 cup Parmesan cheese. Repeat layers, and top with remaining mozzarella and Parmesan cheese. Cover with foil: to prevent sticking, either spray foil with cooking spray, or make sure the foil does not touch the cheese.</p>
+            <img src="img/recipes/l5.png">
+            <p>Bake in preheated oven for 25 minutes. Remove foil, and bake an additional 25 minutes. Cool for 15 minutes before serving.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d13" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d13.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>5m</p>
+        <p class="rdp">Cook<br>15m</p>
+        <p class="rdp">Ready In<br>20m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth.</p>
+            <img src="img/recipes/l2.png">
+            <p>Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d14" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d14.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>25m</p>
+        <p class="rdp">Cook<br>35m</p>
+        <p class="rdp">Ready In<br>1h</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Preheat oven to 350 degrees F (175 degrees C). Grease and flour an 8-inch square pan.</p>
+            <img src="img/recipes/l2.png">
+            <p>In a large saucepan, melt 1/2 cup butter. Remove from heat, and stir in sugar, eggs, and 1 teaspoon vanilla. Beat in 1/3 cup cocoa, 1/2 cup flour, salt, and baking powder. Spread batter into prepared pan.</p>
+            <img src="img/recipes/l3.png">
+            <p>Bake in preheated oven for 25 to 30 minutes. Do not overcook.</p>
+            <img src="img/recipes/l4.png">
+            <p>To Make Frosting: Combine 3 tablespoons softened butter, 3 tablespoons cocoa, honey, 1 teaspoon vanilla extract, and 1 cup confectioners' sugar. Stir until smooth. Frost brownies while they are still warm.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d15" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d15.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>10m</p>
+        <p class="rdp">Cook<br>6h</p>
+        <p class="rdp">Ready In<br>6h10m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Place the chicken, butter, soup, and onion in a slow cooker, and fill with enough water to cover.</p>
+            <img src="img/recipes/l2.png">
+            <p>Cover, and cook for 5 to 6 hours on High. About 30 minutes before serving, place the torn biscuit dough in the slow cooker. Cook until the dough is no longer raw in the center.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d16" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d16.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>15m</p>
+        <p class="rdp">Cook<br>50m</p>
+        <p class="rdp">Ready In<br>1h5m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Preheat oven to 350 degrees F (175 degrees C). Grease and flour three 7x3 inch loaf pans.</p>
+            <img src="img/recipes/l2.png">
+            <p>In a large bowl, mix together pumpkin puree, eggs, oil, water and sugar until well blended. In a separate bowl, whisk together the flour, baking soda, salt, cinnamon, nutmeg, cloves and ginger. Stir the dry ingredients into the pumpkin mixture until just blended. Pour into the prepared pans.</p>
+            <img src="img/recipes/l3.png">
+            <p>Bake for about 50 minutes in the preheated oven. Loaves are done when toothpick inserted in center comes out clean.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d17" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d17.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>20m</p>
+        <p class="rdp">Cook<br>1h</p>
+        <p class="rdp">Ready In<br>1h30m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 5x9 inch loaf pan.</p>
+            <img src="img/recipes/l2.png">
+            <p>Press the brown sugar in the bottom of the prepared loaf pan and spread the ketchup over the sugar.</p>
+            <img src="img/recipes/l3.png">
+            <p>In a mixing bowl, mix thoroughly all remaining ingredients and shape into a loaf. Place on top of the ketchup.</p>
+            <img src="img/recipes/l4.png">
+            <p>Bake in preheated oven for 1 hour or until juices are clear.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d18" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d18.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>20m</p>
+        <p class="rdp">Cook<br>1h</p>
+        <p class="rdp">Ready In<br>1h40m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Grease and flour two 8 x 4 inch pans. Preheat oven to 325 degrees F (165 degrees C).</p>
+            <img src="img/recipes/l2.png">
+            <p>Sift flour, salt, baking powder, soda, and cinnamon together in a bowl.</p>
+            <img src="img/recipes/l3.png">
+            <p>Beat eggs, oil, vanilla, and sugar together in a large bowl. Add sifted ingredients to the creamed mixture, and beat well. Stir in zucchini and nuts until well combined. Pour batter into prepared pans.</p>
+            <img src="img/recipes/l4.png">
+            <p>Bake for 40 to 60 minutes, or until tester inserted in the center comes out clean. Cool in pan on rack for 20 minutes. Remove bread from pan, and completely cool.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d19" class="details" style="display: none;">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d19.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>20m</p>
+        <p class="rdp">Cook<br>35m</p>
+        <p class="rdp">Ready In<br>35m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Bring a large pot of lightly salted water to a boil. Add ziti pasta, and cook until al dente, about 8 minutes; drain.</p>
+            <img src="img/recipes/l2.png">
+            <p>In a large skillet, brown onion and ground beef over medium heat. Add spaghetti sauce, and simmer 15 minutes.</p>
+            <img src="img/recipes/l3.png">
+            <p>Preheat the oven to 350 degrees F (175 degrees C). Butter a 9x13 inch baking dish. Layer as follows: 1/2 of the ziti, Provolone cheese, sour cream, 1/2 sauce mixture, remaining ziti, mozzarella cheese and remaining sauce mixture. Top with grated Parmesan cheese.</p>
+            <img src="img/recipes/l4.png">
+            <p>Bake for 30 minutes in the preheated oven, or until cheeses are melted.</p>
+        </div>
+    </div>
+</div>
+<div id="d20" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d20.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>20m</p>
+        <p class="rdp">Cook<br>10m</p>
+        <p class="rdp">Ready In<br>35m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Preheat oven to 350 degrees F (175 degrees C).</p>
+            <img src="img/recipes/l2.png">
+            <p>In a large bowl, mix together the cake and pudding mixes,
+                sour cream, oil, beaten eggs and water. Stir in the chocolate chips and pour batter into a well greased
+                12 cup bundt pan.</p>
+            <img src="img/recipes/l3.png">
+            <p>Bake for 50 to 55 minutes, or until top is springy to the touch and a wooden toothpick inserted comes out
+                clean.
+                Cool cake thoroughly in pan at least an hour and a half before inverting onto a plate If desired, dust
+                the cake with powdered sugar.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d21" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d21.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>30m</p>
+        <p class="rdp">Cook<br>1h</p>
+        <p class="rdp">Ready In<br>7h30m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Preheat oven to 350 degrees F (175 degrees C). Grease a 9 inch springform pan.
+            </p>
+            <img src="img/recipes/l2.png">
+            <p>In a medium bowl, mix graham cracker crumbs with melted butter. Press onto bottom of springform pan.</p>
+            <img src="img/recipes/l3.png">
+            <p>In a large bowl, mix cream cheese with sugar until smooth. Blend in milk, and then mix in the eggs one at
+                a time,
+                mixing just enough to incorporate. Mix in sour cream, vanilla and flour until smooth. Pour filling into
+                prepared crust.</p>
+            <img src="img/recipes/l4.png">
+            <p>Bake in preheated oven for 1 hour. Turn the oven off, and let cake cool in oven with the door closed for
+                5 to 6 hours;
+                this prevents cracking. Chill in refrigerator until serving.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d22" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d22.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>15m</p>
+        <p class="rdp">Cook<br>7h</p>
+        <p class="rdp">Ready In<br>7h15m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Place the onion, chili beans, black beans, corn, tomato sauce, beer, and diced tomatoes in a slow cooker.
+                Add taco seasoning, and stir to blend. Lay chicken breasts on top of the mixture, pressing down slightly
+                until
+                just covered by the other ingredients. Set slow cooker for low heat, cover, and cook for 5 hours.</p>
+            <img src="img/recipes/l2.png">
+            <p>Remove chicken breasts from the soup, and allow to cool long enough to be handled. Stir the shredded
+                chicken
+                back into the soup, and continue cooking for 2 hours. Serve topped with shredded Cheddar cheese, a
+                dollop of sour
+                cream, and crushed tortilla chips, if desired.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d23" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d23.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>20m</p>
+        <p class="rdp">Cook<br>15m</p>
+        <p class="rdp">Ready In<br>3h</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Place ingredients in the pan of the bread machine in the order recommended by the manufacturer. Select
+                dough cycle; press Start.</p>
+            <img src="img/recipes/l2.png">
+            <p>After the dough has doubled in size turn it out onto a lightly floured surface, cover and let rest for 10
+                minutes. In a small bowl, combine brown sugar and cinnamon.</p>
+            <img src="img/recipes/l3.png">
+            <p>Roll dough into a 16x21-inch rectangle. Spread dough with 1/3 cup butter and sprinkle evenly with
+                sugar/cinnamon mixture. Roll up dough and cut into 12 rolls.
+                Place rolls in a lightly greased 9x13 inch baking pan. Cover and let rise until nearly doubled, about 30
+                minutes. Meanwhile, preheat oven to 400 degrees F (200 degrees C).</p>
+            <img src="img/recipes/l4.png">
+            <p>Bake rolls in preheated oven until golden brown, about 15 minutes. While rolls are baking, beat together
+                cream cheese, 1/4 cup butter, confectioners' sugar, vanilla extract and salt.
+                Spread frosting on warm rolls before serving.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d24" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d24.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>15m</p>
+        <p class="rdp">Cook<br>45m</p>
+        <p class="rdp">Ready In<br>1h</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Pound chicken breasts if they are too thick.
+                Place a cheese and ham slice on each breast within 1/2 inch of the edges.
+                Fold the edges of the chicken over the filling, and secure with toothpicks. Mix the flour and paprika in
+                a small bowl, and coat the chicken pieces.</p>
+            <img src="img/recipes/l2.png">
+            <p>Heat the butter in a large skillet over medium-high heat, and cook the chicken until browned on all
+                sides.
+                Add the wine and bouillon. Reduce heat to low, cover, and simmer for 30 minutes,
+                until chicken is no longer pink and juices run clear.</p>
+            <img src="img/recipes/l3.png">
+            <p>Remove the toothpicks, and transfer the breasts to a warm platter. Blend the cornstarch with the cream in
+                a small bowl, and whisk slowly into the skillet. Cook,
+                stirring until thickened, and pour over the chicken. Serve warm.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d25" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d25.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>30m</p>
+        <p class="rdp">Cook<br>1h</p>
+        <p class="rdp">Ready In<br>2h</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Preheat oven to 350 degrees F (175 degrees C).
+                Grease and flour a 9x13 inch pan.</p>
+            <img src="img/recipes/l2.png">
+            <p>In a large bowl, beat together eggs, oil, white sugar and 2 teaspoons vanilla.
+                Mix in flour, baking soda, baking powder, salt and cinnamon. Stir in carrots. Fold in pecans. Pour into
+                prepared pan.</p>
+            <img src="img/recipes/l3.png">
+            <p>Bake in the preheated oven for 40 to 50 minutes, or until a toothpick inserted into the center of the
+                cake comes out clean.
+                Let cool in pan for 10 minutes,
+                then turn out onto a wire rack and cool completely.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d26" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d26.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>30m</p>
+        <p class="rdp">Cook<br>45m</p>
+        <p class="rdp">Ready In<br>1h20m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Preheat oven to 350 degrees F (175 degree C).</p>
+            <img src="img/recipes/l2.png">
+            <p>Place the sliced apples in a 9x13 inch pan. Mix the white sugar,
+                1 tablespoon flour and ground cinnamon together, and sprinkle over apples.
+                Pour water evenly over all.</p>
+            <img src="img/recipes/l3.png">
+            <p>Combine the oats, 1 cup flour, brown sugar, baking powder, baking soda and melted butter together.
+                Crumble evenly over the apple mixture.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d27" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d27.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>30m</p>
+        <p class="rdp">Cook<br>1h</p>
+        <p class="rdp">Ready In<br>1h30m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>In a small saucepan over low heat, combine the cornstarch,
+                cold water, sugar, soy sauce, vinegar, garlic, ginger and ground black pepper.
+                Let simmer, stirring frequently, until sauce thickens and bubbles.</p>
+            <img src="img/recipes/l2.png">
+            <p>Preheat oven to 425 degrees F (220 degrees C).</p>
+            <img src="img/recipes/l3.png">
+            <p>Place chicken pieces in a lightly greased 9x13 inch baking dish. Brush chicken with the sauce.
+                Turn pieces over, and brush again.</p>
+            <img src="img/recipes/l4.png">
+            <p>Bake in the preheated oven for 30 minutes. Turn pieces over, and bake for another 30 minutes, until no
+                longer pink and juices run clear.
+                Brush with sauce every 10 minutes during cooking.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d28" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d28.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>10m</p>
+        <p class="rdp">Cook<br>10m</p>
+
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>In a medium bowl, mash together the avocados,
+                lime juice, and salt. Mix in onion, cilantro, tomatoes,
+                and garlic. Stir in cayenne pepper. Refrigerate 1 hour for best flavor, or serve immediately.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d29" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d29.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>30m</p>
+        <p class="rdp">Cook<br>2h</p>
+        <p class="rdp">Ready In<br>2h30m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Heat a large stock pot over medium-high heat. Crumble the ground chuck and sausage into the hot pan,
+                and cook until evenly browned. Drain off excess grease.</p>
+            <img src="img/recipes/l2.png">
+            <p>Pour in the chili beans, spicy chili beans, diced tomatoes and tomato paste. Add the onion, celery,
+                green and red bell peppers, chile peppers, bacon bits, bouillon, and beer. Season with chili powder,
+                Worcestershire sauce, garlic, oregano, cumin, hot pepper sauce, basil, salt, pepper, cayenne, paprika,
+                and sugar. Stir to blend, then cover and simmer over low heat for at least 2 hours, stirring
+                occasionally.</p>
+            <img src="img/recipes/l3.png">
+            <p>After 2 hours, taste, and adjust salt, pepper, and chili powder if necessary. The longer the chili
+                simmers,
+                the better it will taste. Remove from heat and serve, or refrigerate, and serve the next day.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d30" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d30.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>15m</p>
+        <p class="rdp">Cook<br>4h30m</p>
+        <p class="rdp">Ready In<br>4h45m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Pour can of beef broth into slow cooker,
+                and add boneless pork ribs. Cook on High heat for 4 hours, or until meat shreds easily. Remove meat,
+                and shred with two forks. It will seem that it's not working right away, but it will.</p>
+            <img src="img/recipes/l2.png">
+            <p>Preheat oven to 350 degrees F (175 degrees C). Transfer the shredded pork to a Dutch oven or iron
+                skillet, and stir in barbeque sauce.</p>
+            <img src="img/recipes/l3.png">
+            <p>Bake in the preheated oven for 30 minutes, or until heated through.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d31" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d31.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>1m</p>
+        <p class="rdp">Cook<br>1m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>In a large bowl, cream together the margarine and 1 cup sugar until light and fluffy.
+                Beat in the egg, then stir in the water and molasses. Gradually stir the sifted ingredients
+                into the molasses mixture.
+                Shape dough into walnut sized balls, and roll them in the remaining 2 tablespoons of sugar.
+                Place the cookies 2 inches apart onto an ungreased cookie sheet, and flatten slightly.</p>
+        </div>
+    </div>
+</div>
+
+<div id="d32" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d32.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>15m</p>
+        <p class="rdp">Cook<br>10m</p>
+        <p class="rdp">Ready In<br>50m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Preheat oven to 350 degrees F (175 degrees C). Sift together the flour, ginger,
+                baking soda, cinnamon, cloves, and salt. Set aside.</p>
+            <img src="img/recipes/l2.png">
+            <p>In a large bowl, cream together the margarine and 1 cup sugar until light and fluffy.
+                Beat in the egg, then stir in the water and molasses. Gradually stir the sifted ingredients
+                into the molasses mixture.
+                Shape dough into walnut sized balls, and roll them in the remaining 2 tablespoons of sugar.
+                Place the cookies 2 inches apart onto an ungreased cookie sheet, and flatten slightly.</p>
+            <img src="img/recipes/l3.png">
+            <p>Bake for 8 to 10 minutes in the preheated oven. Allow cookies to cool on baking sheet for
+                5 minutes before removing to a wire rack to cool completely. Store in an airtight container.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d33" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d33.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>10m</p>
+        <p class="rdp">Cook<br>4h</p>
+        <p class="rdp">Ready In<br>4h10m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Place chicken in a slow cooker. In a bowl, mix the barbecue sauce, Italian salad dressing,
+                brown sugar, and Worcestershire sauce. Pour over the chicken.</p>
+            <img src="img/recipes/l2.png">
+            <p>Cover, and cook 3 to 4 hours on High or 6 to 8 hours on Low.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d34" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d34.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>15m</p>
+        <p class="rdp">Cook<br>35m</p>
+        <p class="rdp">Ready In<br>50m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Heat oil in a saucepan over medium heat; cook and stir onion and garlic until lightly browned,
+                about 10 minutes.</p>
+            <img src="img/recipes/l2.png">
+            <p>Mix quinoa into onion mixture and cover with vegetable broth; season with cumin, cayenne pepper,
+                salt, and pepper. Bring the mixture to a boil. Cover, reduce heat, and simmer until quinoa is tender
+                and broth is absorbed, about 20 minutes.</p>
+            <img src="img/recipes/l3.png">
+            <p>Stir frozen corn into the saucepan, and continue to simmer until heated through, about 5 minutes;
+                mix in the black beans and cilantro.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="d35" class="details">
+    <div class="title">
+        <a class="close"></a>
+    </div>
+    <img src="img/recipes/d35.jpg">
+    <div class="head">
+        <h1>Directions</h1>
+        <img src="img/recipes/clock.png">
+        <p class="rdp"> prep<br>15m</p>
+        <p class="rdp">Cook<br>10m</p>
+        <p class="rdp">Ready In<br>25m</p>
+        <div class="dbody">
+            <img src="img/recipes/l1.png">
+            <p>Preheat oven to 375 degrees F (190 degrees C). In a small bowl, stir together
+                flour, baking soda, and baking powder. Set aside.</p>
+            <img src="img/recipes/l2.png">
+            <p>In a large bowl, cream together the butter and sugar until smooth. Beat in egg
+                and vanilla. Gradually blend in the dry ingredients. Roll rounded teaspoonfuls of
+                dough into balls, and place onto ungreased cookie sheets.</p>
+            <img src="img/recipes/l3.png">
+            <p>Bake 8 to 10 minutes in the preheated oven, or until golden. Let stand on cookie
+                sheet two minutes before removing to cool on wire racks.</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div style="width: 100%;height: 250px;color:white;background-color: #333333;margin-top:20px;padding-left: 100px;">
+        <div style="width:400px;height:240px;float: left;padding-left: 20px">
+            <h2>Information</h2>
+            <br>
+            <a href="#">Contact Customer Service</a><br><br>
+            <a href="#">International customers</a><br><br>
+            <a href="#">Free Delivery</a><br><br>
+            <a href="#">View your Wishlist</a><br><br>
+            <a href="#">Returns</a><br><br>
+        </div>
+        <div style="width:400px;height:240px;float: left;">
+            <h2>More details</h2>
+            <br>
+            <a href="#">About us</a><br><br>
+            <a href="#">Privacy Policy</a><br><br>
+            <a href="#">Terms & Condition</a><br><br>
+            <a href="#">Secure payment</a><br><br>
+            <a href="#">Site map</a><br>
+        </div>
+        <div style="width:400px;height:240px;float: left;">
+            <h2>Contact us</h2>
+            <img style="padding-top:30px;width: 20px;height: 100px;position: absolute;" src="img/footer-icons.png;">
+            <br>
+            <br>
+            <a href="#" style="margin-left: 30px">QingDao University</a>
+
+            <br>
+            <br>
+            <a href="#" style="margin-left: 30px">sacnfSophia@icould.com</a>
+            <br>
+            <br>
+            <a href="#" style="margin-left: 30px">+86 186-6169-6061</a>
+            <br>
+            <img style="width: 40px;margin: 20px 5px;padding-left: 10px" src="img/qq.png">
+            <img style="width: 40px;margin: 20px 5px" src="img/wx.png">
+            <img style="width: 40px;margin: 20px 5px" src="img/wb.png">
+        </div>
+    </div>
+    <p style="height:30px;padding-left: 400px">Copyright &copy; 2016 CuisineSchool. Design by Sunshine : Sophia , Lucy ,
+        Lavender .</p>
+</footer>
+<script type="text/javascript">
+    $(".imgs-btn ul li").click(function () {
+        var index = $(this).index();
+        $(this).addClass("select").siblings().removeClass("select");
+        $(".imgs ul li").eq(index).fadeIn(300).siblings().fadeOut(100);
+    });
+    //    自动计时器
+    var timer = setInterval("change()", 3000);
+    var i = 1;
+    function change() {
+        $(".imgs ul li").eq(i).fadeIn(2000).siblings().fadeOut(500);
+        $(".imgs-btn ul li").eq(i).addClass("select").siblings().removeClass("select");
+        if (i == 4) {
+            i = 0;
+        } else {
+            i++;
+        }
+    }
+    //二级菜单鼠标滑动效果
+
+    $(".top-nav ul li.recipe").hover(function () {
+        $(this).find(".menu").slideDown();//向下慢慢展开
+    }, function () {
+        $(this).find(".menu").slideUp();//向上收缩
+    });
+    /////详细菜单显示
+    $(".recipes li.r1").click(function () {
+        $(".Layer").show();
+        $("#d1").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r2").click(function () {
+        $(".Layer").show();
+        $("#d2").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r3").click(function () {
+        $(".Layer").show();
+        $("#d3").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r4").click(function () {
+        $(".Layer").show();
+        $("#d4").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r5").click(function () {
+        $(".Layer").show();
+        $("#d5").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r6").click(function () {
+        $(".Layer").show();
+        $("#d6").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r7").click(function () {
+        $(".Layer").show();
+        $("#d7").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r8").click(function () {
+        $(".Layer").show();
+        $("#d8").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r9").click(function () {
+        $(".Layer").show();
+        $("#d9").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r10").click(function () {
+        $(".Layer").show();
+        $("#d10").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r11").click(function () {
+        $(".Layer").show();
+        $("#d11").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r12").click(function () {
+        $(".Layer").show();
+        $("#d12").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r13").click(function () {
+        $(".Layer").show();
+        $("#d13").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r14").click(function () {
+        $(".Layer").show();
+        $("#d14").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r15").click(function () {
+        $(".Layer").show();
+        $("#d15").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r16").click(function () {
+        $(".Layer").show();
+        $("#d16").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r17").click(function () {
+        $(".Layer").show();
+        $("#d17").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r18").click(function () {
+        $(".Layer").show();
+        $("#d18").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r19").click(function () {
+        $(".Layer").show();
+        $("#d19").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r20").click(function () {
+        $(".Layer").show();
+        $("#d20").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r21").click(function () {
+        $(".Layer").show();
+        $("#d21").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r22").click(function () {
+        $(".Layer").show();
+        $("#d22").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r23").click(function () {
+        $(".Layer").show();
+        $("#d23").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r24").click(function () {
+        $(".Layer").show();
+        $("#d24").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r25").click(function () {
+        $(".Layer").show();
+        $("#d25").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r26").click(function () {
+        $(".Layer").show();
+        $("#d26").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r27").click(function () {
+        $(".Layer").show();
+        $("#d27").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r28").click(function () {
+        $(".Layer").show();
+        $("#d28").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r29").click(function () {
+        $(".Layer").show();
+        $("#d29").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r30").click(function () {
+        $(".Layer").show();
+        $("#d30").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r31").click(function () {
+        $(".Layer").show();
+        $("#d31").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r32").click(function () {
+        $(".Layer").show();
+        $("#d32").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r33").click(function () {
+        $(".Layer").show();
+        $("#d33").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r34").click(function () {
+        $(".Layer").show();
+        $("#d34").show();
+        $(".top").hide();
+    });
+    $(".recipes li.r35").click(function () {
+        $(".Layer").show();
+        $("#d35").show();
+        $(".top").hide();
+    });
+    $("a.close").click(function () {
+        $(".Layer").hide();
+        $(".details").hide();
+        $(".top").show();
+    });
+</script>
+
+</body>
+</html>
